@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/danielmark0116/zadanie25-5/issues"
   },
-  "homepage": "https://github.com/danielmark0116/zadanie25-5#readme"
+  "homepage": "https://github.com/danielmark0116/zadanie25-5#readme",
+  "dependencies": {
+    "pug": "^2.0.4"
+  }
 }

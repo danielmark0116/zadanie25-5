@@ -1,0 +1,11 @@
+doctype html
+html
+    head
+        title="pug view engine"
+    body
+        include ./header.pug
+        if (user.auth)
+            h3 hello #{user.login}
+        else 
+            a(href="/auth/google") Sign Up
+        include ./footer.pug

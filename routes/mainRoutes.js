@@ -3,7 +3,9 @@ const router = express.Router();
 const middleware = require('../middleware/middleware');
 
 router.get('/', middleware, (req, res) => {
-  res.send('helo from route');
+  res.render('index', {
+    user: { auth: false, login: 'testUser', email: 'email@gmail.com' }
+  });
 });
 
 router.get('/second', (req, res) => {
