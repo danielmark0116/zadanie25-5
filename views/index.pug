@@ -4,8 +4,11 @@ html
         title="pug view engine"
     body
         include ./header.pug
-        if (user.auth)
-            h3 hello #{user.login}
+        include ./menu.pug
+        if (user)
+            h3 hello #{user.displayName}
+            br
         else 
-            a(href="/auth/google") Sign Up
+            p stranger
+            a(href="/auth/google") Log in here because you are not logged in
         include ./footer.pug
